@@ -1,20 +1,18 @@
 #Ejercicio 1: Variables y Tipos de Datos 
-#Enunciado: Define una variable llamada nombre con tu nombre
+#Enunciado: Define una variable llamada numero con el valor 10 y otra llamada nombre con tu nombre.
 
+numero <-10
 nombre <- "Ignacio"
 
 #Ejercicio 2: Funciones class e is.numeric
-#Enunciado: Utiliza las funciones numero con el valor 10 y otra llamada class e is.numeric para determinar 
-#el tipo de dato de numero
+#Enunciado: Utiliza las funciones class e dato de numero
 
-numero <-10
-class(numero)
-is.numeric(numero)
+es_class <- class(numero)
+es_numerico <- is.numeric(numero)
 
 #Ejercicio 3: Operaciones Aritméticas
 #Enunciado: Realiza una operación aritmética que sume numero y el doble de numero
 
-numero <-10
 resultado <- numero + 2*numero
 
 #Ejercicio 4: Vectores y Listas
@@ -27,16 +25,13 @@ informacion <- list(nombre = "Cecilia", edad = 40)
 #Ejercicio 5: Funciones is.character e is.logical
 #Enunciado: Verifica si nombre es de tipo caracter y si es_numerico es de tipo lógico.
 
-es_numerico <- 10
-
-is.character(nombre)
-is.logical (es_numerico)
+es_caracter <- is.character(nombre)
+es_logico <- is.logical (es_numerico)
 
 #Ejercicio 6: Operaciones Lógicas
 #Enunciado: Crea una variable llamada mayor_de_edad que sea TRUE si la edad de la 
 #primera persona en edades es mayor o igual a 18.
 
-edades <- c(25, 35, 40)
 mayor_de_edad <- edades[1] >= 18
 
 #Ejercicio 7: Comparaciones de Vectores
@@ -54,9 +49,9 @@ comparacion <- resultado > edades[3]
 #Enunciado: Define dos variables lógicas, condicion1 y condicion2 , ambas con valor TRUE 
 #Comprueba si ambas condiciones son verdaderas.
 
-condicion1 <- 50
-condicion2 <- 60
-comparacionY <- condicion1 & condicion2 > edades[3]
+condicion1 <- TRUE
+condicion2 <- TRUE
+comparacionY <- condicion1 & condicion2
 
 #Ejercicio 10: Utilizar Operador Lógico
 #Enunciado: Define una variable lógica, verdadero , con valor TRUE . Comprueba que su valor NO sea verdadero
